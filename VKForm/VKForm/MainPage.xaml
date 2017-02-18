@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:VKForm"
+             x:Class="VKForm.MainPage"
+             Padding="20">
+
+  <ScrollView>
+    <StackLayout>
+      <Label Text="Бланк" HorizontalOptions="Center" FontSize="Large" />
+      <Entry x:Name="FName" Placeholder="Имя" TextChanged="Entry_TextChanged" />
+      <Entry x:Name="LName" Placeholder="Фамилия" TextChanged="Entry_TextChanged" />
+      <Picker x:Name="Country" Title="Страна" SelectedIndexChanged="Country_SelectedIndexChanged" />
+      <SearchBar x:Name="City" Placeholder="Город" TextChanged="City_TextChanged" />
+      <SearchBar x:Name="University" Placeholder="Университет" TextChanged="Entry_TextChanged" />
+      <Button x:Name="Submit" Text="Заполнить бланк" Clicked="SubmitClick" />
+    </StackLayout>
+  </ScrollView>
+
+</ContentPage>
